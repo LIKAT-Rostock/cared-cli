@@ -234,6 +234,8 @@ convention = "numpy"  # "google", "numpy", or "pep257"
 docstring-code-format = true
 
 # Spell checker: https://github.com/crate-ci/typos
+[tool.typos.files]
+extend-exclude = ["LICENSE"]
 [tool.typos.default.extend-words]
 # Don't correct surname "Linke" (writing "linke" in lowercase was required for ignoring)
 linke = "linke"
