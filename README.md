@@ -1,3 +1,7 @@
+[![PyPI - Version](https://img.shields.io/pypi/v/cared-cli)](https://pypi.org/project/cared-cli)
+[![](https://github.com/LIKAT-Rostock/cared-cli/workflows/Publish/badge.svg)](https://github.com/LIKAT-Rostock/cared-cli/actions)
+[![](https://github.com/LIKAT-Rostock/cared-cli/workflows/Build/badge.svg)](https://github.com/LIKAT-Rostock/cared-cli/actions)
+
 # CaReD CLI
 
 A command line interface for managing a CaReD server.
