@@ -1,5 +1,5 @@
-# Please see the documentation for all configuration options:
-# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+# This configures updates via dependabot only for github actions.
+# All updates are grouped into a single PR.
 
 version: 2
 updates:
@@ -9,3 +9,9 @@ updates:
     interval: monthly
   assignees:
     - "dalito"
+  groups:
+    github-actions:
+      patterns:
+        - "*"
+
+# Ref: https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
