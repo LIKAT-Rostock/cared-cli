@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
         with:
-          python-version: 3.12
+          python-version: '3.14'
 
       - name: Install uv
         run: pipx install uv
@@ -63,9 +63,3 @@ jobs:
         uses: pypa/gh-action-pypi-publish@ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e
 
 # [1] https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
-# Used actions: (updates managed by dependabot)
-# - https://github.com/actions/checkout
-# - https://github.com/actions/setup-python
-# - https://github.com/actions/upload-artifact
-# - https://github.com/actions/download-artifact
-# - https://github.com/pypa/gh-action-pypi-publish/

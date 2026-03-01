@@ -14,7 +14,6 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  FORCE_COLOR: "1"  # Make tool output pretty.
   PIP_DISABLE_PIP_VERSION_CHECK: "1"
   PIP_PROGRESS_BAR: "off"
 
@@ -26,9 +25,9 @@ jobs:
     strategy:
       matrix:
         python-version:
-        - '3.10'
-        - '3.11'
         - '3.12'
+        - '3.13'
+        - '3.14'
 
     steps:
     - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
