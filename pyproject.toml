@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
 [project]
 # Storing project metadata in pyproject.toml https://peps.python.org/pep-0621/
 name = "cared-cli"
@@ -11,7 +15,7 @@ maintainers = [
 ]
 license = {text = "Apache 2.0"}
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 keywords = ["CaReD", "RDM", "ELN", "LIMS"]
 # https://pypi.org/classifiers/
 classifiers = [
@@ -21,9 +25,9 @@ classifiers = [
   "Intended Audience :: Science/Research",
   "License :: OSI Approved :: Apache Software License",
   "Operating System :: OS Independent",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
 ]
 dependencies = [
     "click>=8.1.7",
@@ -51,10 +55,6 @@ dev = [
 
 [project.scripts]
 cared = "cared_cli._cli:app"
-
-[build-system]
-requires = ["hatchling", "hatch-vcs"]
-build-backend = "hatchling.build"
 
 [tool.hatch.metadata]
 # Hatch disallows direct references for dependencies by default.
